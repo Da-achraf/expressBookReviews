@@ -20,8 +20,8 @@ const findBookBy = (parameter, value) => {
 * Because axios uses http for communication, I pushed this json
 * file to my final project repo, and then I used its url BOOKS_URL
 * available in (../utilities/constants.js) to retrieve the books
-* asynchronous using axios and async await implemented in the retrieveBooks
-* function bellow.
+* asynchronously using axios and async await implemented in 
+* the retrieveBooks function bellow.
 * */
 const findBookByForAsync = async (parameter, value) => {
     const _books = await retrieveBooks()
