@@ -16,6 +16,8 @@ app.use(
         saveUninitialized: true,
     })
 );
+
+// Setting the authorization middleware for the routes /customer/auth/*
 app.use("/customer/auth/*", function auth(req, res, next) {
     if (req.session.authorization) {
         const token = req.session.authorization.accessToken;
